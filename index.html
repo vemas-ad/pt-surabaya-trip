@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Surabaya Trip | Shore Excursions from Tanjung Perak Port</title>
+    <meta name="description" content="Make the most of your port stop at Tanjung Perak Surabaya. Join our guided city tours — Family, Couple, Solo & Fast Tour packages available."/>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ========== NAVBAR ========== -->
+<header id="navbar">
+    <div class="nav-inner">
+        <a href="#hero" class="logo">
+            <div class="logo-icon">⚓</div>
+            <div class="logo-text">
+                <div class="logo-main">Surabaya Trip</div>
+                <div class="logo-sub">Shore Excursions</div>
+            </div>
+        </a>
+
+        <nav class="nav-links">
+            <a href="#why">Why Us</a>
+            <a href="#tours">Tour Packages</a>
+            <a href="#how">How It Works</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <a class="nav-cta" href="#tours">Book Now</a>
+
+        <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#why" onclick="closeMenu()">Why Us</a>
+        <a href="#tours" onclick="closeMenu()">Tour Packages</a>
+        <a href="#how" onclick="closeMenu()">How It Works</a>
+        <a href="#gallery" onclick="closeMenu()">Gallery</a>
+        <a href="#contact" onclick="closeMenu()">Contact</a>
+        <a href="#tours" class="mobile-cta" onclick="closeMenu()">Book Now</a>
+    </div>
+</header>
+
+<!-- ========== HERO ========== -->
+<section id="hero">
+    <div class="hero-bg">
+        <div class="hero-overlay"></div>
+        <div class="shape s1"></div>
+        <div class="shape s2"></div>
+    </div>
+
+    <div class="hero-content container">
+        <span class="hero-tag">⚓ Tanjung Perak Port, Surabaya</span>
+
+        <h1 class="hero-title">
+            Your Ship Has Docked.<br/>
+            <em>Don't Waste a Moment.</em>
+        </h1>
+
+        <p class="hero-desc">
+            Make the most of your layover in Surabaya with our curated shore excursions — designed to fit your schedule and get you back before departure.
+        </p>
+
+        <div class="hero-btns">
+            <a href="#tours" class="btn-primary">Explore Packages</a>
+            <a href="#how" class="btn-ghost">How It Works</a>
+        </div>
+
+        <div class="hero-stats">
+            <div class="stat">
+                <span class="stat-num">500+</span>
+                <span class="stat-label">Happy Passengers</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat">
+                <span class="stat-num">6</span>
+                <span class="stat-label">Tour Packages</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat">
+                <span class="stat-num">100%</span>
+                <span class="stat-label">On-Time Return</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="hero-scroll">
+        <div class="scroll-dot"></div>
+        <span>Scroll to explore</span>
+    </div>
+</section>
+
+<!-- ========== WHY US ========== -->
+<section id="why">
+    <div class="container">
+
+        <div class="section-header">
+            <span class="section-tag">Why Choose Us</span>
+            <h2>Make Every Hour at Port Count</h2>
+            <p>We design every tour around your ship's schedule, so you explore Surabaya with zero stress about missing departure.</p>
+        </div>
+
+        <div class="why-grid">
+            <div class="why-card">
+                <span class="why-icon">🕐</span>
+                <h3>Time-Matched Tours</h3>
+                <p>Every tour is calibrated to your ship's docking schedule. We guarantee you'll be back before departure.</p>
+            </div>
+
+            <div class="why-card">
+                <span class="why-icon">🗺️</span>
+                <h3>Local Expert Guides</h3>
+                <p>Native Surabaya guides who know every shortcut, hidden spot, and best photo angle in the city.</p>
+            </div>
+
+            <div class="why-card">
+                <span class="why-icon">🎟️</span>
+                <h3>Instant E-Ticket</h3>
+                <p>Book online and receive your e-ticket instantly via WhatsApp — no printing required.</p>
+            </div>
+
+            <div class="why-card">
+                <span class="why-icon">🔒</span>
+                <h3>Secure QRIS Payment</h3>
+                <p>Pay safely with QRIS, GoPay, or bank transfer. Payment proof sent directly to your WhatsApp.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- ========== TOUR PACKAGES ========== -->
+<section id="tours">
+    <div class="container">
+
+        <div class="section-header">
+            <span class="section-tag">Tour Packages</span>
+            <h2>Choose Your Adventure</h2>
+            <p>Whether you're traveling solo, as a couple, with family, or short on time — we have the perfect Surabaya experience for you.</p>
+        </div>
+
+        <div class="tours-grid">
+
+            <!-- FAST TOUR -->
+            <div class="tour-card" data-package="Fast Tour">
+                <div class="tour-badge fast-badge">⚡ Quick Visit</div>
+                <div class="tour-img fast-img">
+                    <div class="tour-img-overlay"><span>Fast Tour</span></div>
+                </div>
+                <div class="tour-body">
+                    <span class="tour-type">Fast Tour Package</span>
+                    <h3>Surabaya Express Highlights</h3>
+                    <p>Ship docked for only a few hours? This rapid-fire highlights tour gets you to the best spots and back to port — fast, efficient, no rush.</p>
+
+                    <ul class="tour-includes">
+                        <li>✔ Surabaya North Quay</li>
+                        <li>✔ Tugu Pahlawan</li>
+                        <li>✔ Hotel Majapahit</li>
+                        <li>✔ Jalan Tunjungan</li>
+                        <li>✔ House of Sampoerna</li>
+                        <li>✔ Duration: 2–3 Hours</li>
+                    </ul>
+
+                    <div class="tour-footer">
+                        <div class="tour-price">
+                            <span class="price-from">Starting from</span>
+                            <span class="price-amount">Rp 150.000<span class="price-per">/person</span></span>
+                        </div>
+                        <button class="btn-book" onclick="openBooking('Fast Tour', 'Rp 150.000/person')">Book Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAMILY -->
+            <div class="tour-card" data-package="Family Tour">
+                <div class="tour-badge">👨‍👩‍👧‍👦 Most Popular</div>
+                <div class="tour-img family-img">
+                    <div class="tour-img-overlay"><span>Family Tour</span></div>
+                </div>
+                <div class="tour-body">
+                    <span class="tour-type">Family Package</span>
+                    <h3>Surabaya Family Explorer</h3>
+                    <p>A complete family adventure covering Surabaya's top sights — museums, hero monuments, and delicious local food. Kid-friendly and comfortable.</p>
+
+                    <ul class="tour-includes">
+                        <li>✔ Surabaya North Quay</li>
+                        <li>✔ Kebun Binatang Surabaya</li>
+                        <li>✔ Museum Pendidikan</li>
+                        <li>✔ Taman Bungkul</li>
+                        <li>✔ Alun-Alun Surabaya</li>
+                        <li>✔ Duration: 6–7 Hours</li>
+                    </ul>
+
+                    <div class="tour-footer">
+                        <div class="tour-price">
+                            <span class="price-from">Starting from</span>
+                            <span class="price-amount">Rp 450.000<span class="price-per">/group</span></span>
+                        </div>
+                        <button class="btn-book" onclick="openBooking('Family Tour', 'Rp 450.000/group')">Book Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SOLO -->
+            <div class="tour-card" data-package="Solo Tour">
+                <div class="tour-badge solo-badge">🧍 Solo Traveler</div>
+                <div class="tour-img solo-img">
+                    <div class="tour-img-overlay"><span>Solo Tour</span></div>
+                </div>
+                <div class="tour-body">
+                    <span class="tour-type">Solo Package</span>
+                    <h3>Surabaya Solo Discovery</h3>
+                    <p>Independent traveler? Join a small group or go private. Explore Surabaya's vibrant culture, street art, and history at your own pace.</p>
+
+                    <ul class="tour-includes">
+                        <li>✔ Kampung Lawas Maspati</li>
+                        <li>✔ Kota Lama Surabaya</li>
+                        <li>✔ Jembatan Merah</li>
+                        <li>✔ Museum 10 November</li>
+                        <li>✔ Jalan Tunjungan</li>
+                        <li>✔ Duration: 4–5 Hours</li>
+                    </ul>
+
+                    <div class="tour-footer">
+                        <div class="tour-price">
+                            <span class="price-from">Starting from</span>
+                            <span class="price-amount">Rp 200.000<span class="price-per">/person</span></span>
+                        </div>
+                        <button class="btn-book" onclick="openBooking('Solo Tour', 'Rp 200.000/person')">Book Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- COUPLE -->
+            <div class="tour-card featured" data-package="Couple Tour">
+                <div class="tour-badge featured-badge">💑 Romantic</div>
+                <div class="tour-img couple-img">
+                    <div class="tour-img-overlay"><span>Couple Tour</span></div>
+                </div>
+                <div class="tour-body">
+                    <span class="tour-type">Best Value</span>
+                    <h3>Surabaya Romantic Escape</h3>
+                    <p>A curated intimate tour for two — explore charming heritage spots, enjoy café stops, and capture memories together in the Pearl of East Java.</p>
+
+                    <ul class="tour-includes">
+                        <li>✔ Taman Harmoni</li>
+                        <li>✔ Kota Lama Surabaya</li>
+                        <li>✔ Hotel Majapahit</li>
+                        <li>✔ Surabaya North Quay Sunset</li>
+                        <li>✔ Cafe Rooftop</li>
+                        <li>✔ Duration: 5–6 Hours</li>
+                    </ul>
+
+                    <div class="tour-footer">
+                        <div class="tour-price">
+                            <span class="price-from">Starting from</span>
+                            <span class="price-amount">Rp 350.000<span class="price-per">/couple</span></span>
+                        </div>
+                        <button class="btn-book featured-book" onclick="openBooking('Couple Tour', 'Rp 350.000/couple')">Book Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CULINARY TOUR -->
+            <div class="tour-card" data-package="Culinary Tour">
+                <div class="tour-badge" style="background:#e67e22;">🍜 Foodie</div>
+                <div class="tour-img" style="background-image: linear-gradient(135deg,#e67e22,#f39c12);">
+                    <div class="tour-img-overlay"><span>Culinary Tour</span></div>
+                </div>
+                <div class="tour-body">
+                    <span class="tour-type">Culinary Package</span>
+                    <h3>Surabaya Food Adventure</h3>
+                    <p>Embark on a flavorful journey through Surabaya's best street food and traditional dishes. Perfect for food lovers!</p>
+
+                    <ul class="tour-includes">
+                        <li>✔ Pasar Genteng</li>
+                        <li>✔ Rawon Setan</li>
+                        <li>✔ Lontong Balap</li>
+                        <li>✔ Rujak Cingur</li>
+                        <li>✔ Soto Lamongan</li>
+                        <li>✔ Tunjungan</li>
+                        <li>✔ Duration: 4–5 Hours</li>
+                    </ul>
+
+                    <div class="tour-footer">
+                        <div class="tour-price">
+                            <span class="price-from">Starting from</span>
+                            <span class="price-amount">Rp 250.000<span class="price-per">/person</span></span>
+                        </div>
+                        <button class="btn-book" onclick="openBooking('Culinary Tour', 'Rp 250.000/person')">Book Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SPECIAL WISH TOUR -->
+            <div class="tour-card" data-package="Special Wish Tour">
+                <div class="tour-badge" style="background:#8e44ad;">✨ Custom</div>
+                <div class="tour-img" style="background-image: linear-gradient(135deg,#8e44ad,#3498db);">
+                    <div class="tour-img-overlay"><span>Special Wish</span></div>
+                </div>
+                <div class="tour-body">
+                    <span class="tour-type">Custom Package</span>
+                    <h3>Special Wish Tour</h3>
+                    <p>Have a specific interest? We'll design a tour just for you. Choose from Religi, Sejarah, Belanja, Fotografi, Budaya, or Keluarga themes.</p>
+
+                    <ul class="tour-includes">
+                        <li>✔ Custom Itinerary</li>
+                        <li>✔ Private Guide</li>
+                        <li>✔ Flexible Duration</li>
+                        <li>✔ AC Vehicle + Driver</li>
+                        <li>✔ Choose Your Theme</li>
+                        <li>✔ Duration: Flexible</li>
+                    </ul>
+
+                    <div class="tour-footer">
+                        <div class="tour-price">
+                            <span class="price-from">Starting from</span>
+                            <span class="price-amount">Custom<span class="price-per">/request</span></span>
+                        </div>
+                        <button class="btn-book" onclick="openBooking('Special Wish Tour', 'Custom')">Book Now</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ========== HOW IT WORKS ========== -->
+<section id="how">
+    <div class="container">
+        <div class="section-header light">
+            <span class="section-tag">Process</span>
+            <h2>How It Works</h2>
+            <p>From booking to boarding — four simple steps to your Surabaya adventure.</p>
+        </div>
+        <div class="steps-wrap">
+            <div class="step">
+                <div class="step-num">01</div>
+                <div class="step-content">
+                    <h3>Choose Your Package</h3>
+                    <p>Browse our Family, Couple, Solo, Fast, Culinary, or Custom tour options and pick the one that fits your time and group.</p>
+                </div>
+            </div>
+            <div class="step-arrow">→</div>
+            <div class="step">
+                <div class="step-num">02</div>
+                <div class="step-content">
+                    <h3>Fill Booking Form</h3>
+                    <p>Enter your personal details, passenger count, ship arrival time, and preferred tour date.</p>
+                </div>
+            </div>
+            <div class="step-arrow">→</div>
+            <div class="step">
+                <div class="step-num">03</div>
+                <div class="step-content">
+                    <h3>Pay via QRIS / GoPay</h3>
+                    <p>Complete secure payment via QRIS, GoPay, or bank transfer. Upload your payment proof right in the form.</p>
+                </div>
+            </div>
+            <div class="step-arrow">→</div>
+            <div class="step">
+                <div class="step-num">04</div>
+                <div class="step-content">
+                    <h3>Receive E-Ticket</h3>
+                    <p>We'll verify and send your e-ticket + tour details to your WhatsApp. Meet our guide at the port!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========== GALLERY ========== -->
+<section id="gallery">
+    <div class="container">
+
+        <div class="section-header">
+            <span class="section-tag">Gallery</span>
+            <h2>Moments From Our Tours</h2>
+            <p>A glimpse of what awaits you in Surabaya — the Pearl of East Java.</p>
+        </div>
+
+        <div class="gallery-grid">
+            <div class="gallery-item g1"><div class="gallery-label">KRI Pasopati Submarine</div></div>
+            <div class="gallery-item g2"><div class="gallery-label">Tugu Pahlawan</div></div>
+            <div class="gallery-item g3"><div class="gallery-label">Cheng Hoo Mosque</div></div>
+            <div class="gallery-item g4"><div class="gallery-label">Kampung Ampel</div></div>
+            <div class="gallery-item g5"><div class="gallery-label">Local Culinary</div></div>
+        </div>
+
+        <p class="gallery-note">📸 Follow us on Instagram <a href="#" target="_blank">@surabayatrip</a> for more travel moments!</p>
+    </div>
+</section>
+
+<!-- ========== TESTIMONIALS ========== -->
+<section id="testimonials">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">Reviews</span>
+            <h2>What Passengers Say</h2>
+        </div>
+        <div class="testi-grid">
+            <div class="testi-card">
+                <div class="testi-stars">⭐⭐⭐⭐⭐</div>
+                <p>"We only had 5 hours at port and Surabaya Trip made every minute count. The Fast Tour was perfect — saw the Submarine Museum and Tugu Pahlawan. Amazing!"</p>
+                <div class="testi-author">
+                    <div class="testi-avatar">JM</div>
+                    <div>
+                        <strong>James Mitchell</strong>
+                        <span>Singapore — MV Costa Serena</span>
+                    </div>
+                </div>
+            </div>
+            <div class="testi-card featured-testi">
+                <div class="testi-stars">⭐⭐⭐⭐⭐</div>
+                <p>"The family package was incredible. Kids loved the submarine! Guide was patient, fun, and super knowledgeable. We made it back with 30 minutes to spare."</p>
+                <div class="testi-author">
+                    <div class="testi-avatar">SR</div>
+                    <div>
+                        <strong>Sarah Robinson</strong>
+                        <span>Australia — Royal Caribbean</span>
+                    </div>
+                </div>
+            </div>
+            <div class="testi-card">
+                <div class="testi-stars">⭐⭐⭐⭐⭐</div>
+                <p>"Booked the couple tour last minute — so easy via WhatsApp. QRIS payment was seamless and e-ticket arrived in minutes. Surabaya was beautiful, highly recommend!"</p>
+                <div class="testi-author">
+                    <div class="testi-avatar">AL</div>
+                    <div>
+                        <strong>Aiko & Lena</strong>
+                        <span>Japan — Nippon Maru</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========== CONTACT ========== -->
+<section id="contact">
+    <div class="container contact-wrap">
+
+        <div class="contact-info">
+            <span class="section-tag">Contact Us</span>
+            <h2>Got Questions?</h2>
+            <p>We're here to help you plan the perfect Surabaya shore excursion. Reach out anytime!</p>
+
+            <div class="contact-items">
+                <div class="contact-item">
+                    <span class="ci-icon">📍</span>
+                    <div>
+                        <strong>Meeting Point</strong>
+                        <span>Pelabuhan Tanjung Perak, Surabaya, East Java</span>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <span class="ci-icon">📱</span>
+                    <div>
+                        <strong>WhatsApp</strong>
+                        <a href="https://wa.me/6285746044128" target="_blank">+62 857-4604-4128</a>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <span class="ci-icon">✉️</span>
+                    <div>
+                        <strong>Email</strong>
+                        <a href="mailto:info@surabayatrip.com">surabayatrip@gmail.com</a>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <span class="ci-icon">🕐</span>
+                    <div>
+                        <strong>Available</strong>
+                        <span>Daily 06:00 – 20:00 WIB</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-form-wrap">
+            <form class="contact-form" onsubmit="sendContactWA(event)">
+                <h3>Send Us a Message</h3>
+
+                <div class="form-group">
+                    <label>Your Name</label>
+                    <input type="text" id="cName" placeholder="Full Name" required>
+                </div>
+
+                <div class="form-group">
+                    <label>WhatsApp Number</label>
+                    <input type="tel" id="cWa" placeholder="+62 8xx-xxxx-xxxx" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Message</label>
+                    <textarea id="cMsg" rows="4" placeholder="Ask about our tour packages, schedules, or anything..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn-primary full-width">Send via WhatsApp 💬</button>
+            </form>
+        </div>
+
+    </div>
+</section>
+
+<!-- ========== FOOTER ========== -->
+<footer>
+    <div class="footer-inner">
+        <div class="footer-brand">
+            <div class="footer-logo">
+                <span>⚓</span>
+                <div>
+                    <strong>Surabaya Trip</strong>
+                    <small>Shore Excursions from Tanjung Perak</small>
+                </div>
+            </div>
+            <p>Turning your port layover into an unforgettable Surabaya experience since 2020.</p>
+            <div class="footer-social">
+                <a href="#">📷 Instagram</a>
+                <a href="#">🎵 TikTok</a>
+                <a href="https://wa.me/6285746044128" target="_blank">💬 WhatsApp</a>
+            </div>
+        </div>
+
+        <div class="footer-links">
+            <h4>Packages</h4>
+            <ul>
+                <li><a href="#" onclick="openBooking('Fast Tour','Rp 150.000/person')">Fast Tour</a></li>
+                <li><a href="#" onclick="openBooking('Family Tour','Rp 450.000/group')">Family Tour</a></li>
+                <li><a href="#" onclick="openBooking('Solo Tour','Rp 200.000/person')">Solo Tour</a></li>
+                <li><a href="#" onclick="openBooking('Couple Tour','Rp 350.000/couple')">Couple Tour</a></li>
+                <li><a href="#" onclick="openBooking('Culinary Tour','Rp 250.000/person')">Culinary Tour</a></li>
+                <li><a href="#" onclick="openBooking('Special Wish Tour','Custom')">Special Wish Tour</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-links">
+            <h4>Navigate</h4>
+            <ul>
+                <li><a href="#tours">Tour Packages</a></li>
+                <li><a href="#how">How It Works</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-links">
+            <h4>Info</h4>
+            <ul>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Cancellation Policy</a></li>
+                <li><a href="#">FAQ</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        © 2026 Surabaya Trip. All rights reserved. | Shore Excursions from Tanjung Perak Port, Surabaya.
+    </div>
+</footer>
+
+<!-- ========== BOOKING MODAL ========== -->
+<div id="bookingModal" class="modal-overlay" onclick="closeIfOverlay(event)">
+    <div class="modal-box">
+        <button class="modal-close" onclick="closeBooking()">✕</button>
+
+        <!-- STEP 1: PERSONAL INFO -->
+        <div id="step1" class="modal-step active">
+            <div class="modal-header">
+                <span class="modal-step-label">Step 1 of 3</span>
+                <h2>Your Information</h2>
+                <p id="selectedPackageLabel" class="modal-pkg-label">Package: —</p>
+            </div>
+            <div class="form-grid">
+
+                <!-- Package Selection Dropdown -->
+                <div class="form-group full-span">
+                    <label>Select Tour Package *</label>
+                    <select id="bPackageSelect" class="package-select">
+                        <option value="Fast Tour">Fast Tour</option>
+                        <option value="Family Tour">Family Tour</option>
+                        <option value="Solo Tour">Solo Tour</option>
+                        <option value="Couple Tour">Couple Tour</option>
+                        <option value="Culinary Tour">Culinary Tour</option>
+                        <option value="Special Wish Tour">Special Wish Tour</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Full Name *</label>
+                    <input type="text" id="bName" placeholder="As on your ID / Passport"/>
+                </div>
+                <div class="form-group">
+                    <label>WhatsApp Number *</label>
+                    <input type="tel" id="bWa" placeholder="+62 8xx-xxxx-xxxx"/>
+                </div>
+                <div class="form-group">
+                    <label>Email Address *</label>
+                    <input type="email" id="bEmail" placeholder="your@email.com"/>
+                </div>
+                <div class="form-group">
+                    <label>Nationality *</label>
+                    <input type="text" id="bNation" placeholder="e.g. Australian, Japanese"/>
+                </div>
+                <div class="form-group">
+                    <label>Passport Number *</label>
+                    <input type="text" id="bPassport" placeholder="Your passport number"/>
+                </div>
+                <div class="form-group">
+                    <label>Number of Passengers *</label>
+                    <input type="number" id="bPax" min="1" max="30" placeholder="How many people?"/>
+                </div>
+                <div class="form-group">
+                    <label>Ship Name *</label>
+                    <input type="text" id="bShip" placeholder="e.g. MV Costa Serena"/>
+                </div>
+                <div class="form-group">
+                    <label>Port Arrival Date *</label>
+                    <input type="date" id="bDate"/>
+                </div>
+                <div class="form-group">
+                    <label>Ship Departure Time *</label>
+                    <input type="time" id="bDepTime"/>
+                </div>
+
+                <!-- File Upload -->
+                <div class="form-group full-span">
+                    <label>Upload ID / Passport Copy (Optional)</label>
+                    <input type="file" id="bIdFile" accept="image/*,.pdf"/>
+                </div>
+
+                <div class="form-group full-span">
+                    <label>Special Requests (Optional)</label>
+                    <textarea id="bNotes" rows="3" placeholder="Wheelchair accessible, dietary needs, language preference, etc."></textarea>
+                </div>
+            </div>
+            <button class="btn-primary full-width" onclick="goToPayment()">Continue to Payment →</button>
+        </div>
+
+        <!-- STEP 2: PAYMENT -->
+        <div id="step2" class="modal-step">
+            <div class="modal-header">
+                <span class="modal-step-label">Step 2 of 3</span>
+                <h2>Payment</h2>
+                <p>Complete your payment to secure your booking.</p>
+            </div>
+            <div class="payment-summary" id="paymentSummary"></div>
+            <div class="payment-methods">
+                <div class="pm-tab active" onclick="switchPm('qris', this)">QRIS / GoPay</div>
+                <div class="pm-tab" onclick="switchPm('transfer', this)">Bank Transfer</div>
+            </div>
+
+            <!-- QRIS / GOPAY -->
+            <div id="pmQris" class="pm-content active">
+                <div class="qris-box">
+                    <div class="qris-code">
+                        <!-- QRIS IMAGE -->
+                        <img src="qris.jpeg" alt="QRIS Surabaya Trip" style="width:240px; height:auto; border-radius:12px; border:2px solid #ddd;"/>
+                    </div>
+                    <div class="qris-info">
+                        <p><strong>Merchant:</strong> Surabaya Trip</p>
+                        <hr/>
+                        <h3 style="margin:12px 0 6px;">💚 GoPay</h3>
+                        <p style="font-size:18px; font-weight:600; color:#1a1a2e;">085746044128</p>
+                        <p style="font-size:14px; color:#555;">a.n PT Surabaya Trip</p>
+                        <p class="qris-note">💡 Scan QRIS or pay via GoPay using the number above.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- BANK TRANSFER -->
+            <div id="pmTransfer" class="pm-content">
+                <div class="bank-cards">
+                    <div class="bank-card">
+                        <div class="bank-logo">🏦 BCA</div>
+                        <div class="bank-detail">
+                            <span class="bank-acc">1234567890</span>
+                            <span class="bank-name">a.n. Surabaya Trip</span>
+                        </div>
+                        <button class="copy-btn" onclick="copyText('1234567890')">Copy</button>
+                    </div>
+                    <div class="bank-card">
+                        <div class="bank-logo">🏦 Mandiri</div>
+                        <div class="bank-detail">
+                            <span class="bank-acc">0987654321</span>
+                            <span class="bank-name">a.n. Surabaya Trip</span>
+                        </div>
+                        <button class="copy-btn" onclick="copyText('0987654321')">Copy</button>
+                    </div>
+                    <div class="bank-card">
+                        <div class="bank-logo">🏦 BRI</div>
+                        <div class="bank-detail">
+                            <span class="bank-acc">1122334455</span>
+                            <span class="bank-name">a.n. Surabaya Trip</span>
+                        </div>
+                        <button class="copy-btn" onclick="copyText('1122334455')">Copy</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="proof-upload">
+                <label class="upload-label">
+                    <span>📎 Upload Payment Proof *</span>
+                    <small>JPG, PNG, PDF — max 5MB</small>
+                    <input type="file" id="bProof" accept="image/*,.pdf" onchange="previewProof(this)"/>
+                    <div class="upload-area" id="uploadArea">
+                        <span id="uploadText">Click or drag file here</span>
+                    </div>
+                </label>
+                <div id="proofPreview" class="proof-preview hidden"></div>
+            </div>
+
+            <div class="step2-btns">
+                <button class="btn-ghost" onclick="goToStep(1)">← Back</button>
+                <button class="btn-primary" onclick="submitBooking()">Submit Booking →</button>
+            </div>
+        </div>
+
+        <!-- STEP 3: CONFIRMATION -->
+        <div id="step3" class="modal-step">
+            <div class="confirm-wrap">
+                <div class="confirm-icon">🎉</div>
+                <h2>Booking Submitted!</h2>
+                <p>Thank you! Your booking request has been received. We'll verify your payment and send your <strong>e-ticket</strong> to your WhatsApp within 30 minutes.</p>
+                <div class="eticket-box" id="eticketBox"></div>
+                <div class="confirm-actions">
+                    <button class="btn-primary" onclick="sendToWA()">📤 Send to WhatsApp</button>
+                    <button class="btn-ghost" onclick="closeBooking()">Close</button>
+                </div>
+                <p class="confirm-note">❓ Need help? WhatsApp us: <a href="https://wa.me/6285746044128">+62 857-4604-4128</a></p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- ========== STICKY WHATSAPP ========== -->
+<a href="https://wa.me/6285746044128?text=Hello! I'm interested in Surabaya Trip shore excursions." target="_blank" class="wa-float" aria-label="Chat on WhatsApp">
+    💬
+    <span class="wa-tooltip">Chat on WhatsApp</span>
+</a>
+
+<!-- ========== TOAST ========== -->
+<div id="toast" class="toast hidden"></div>
+
+<!-- ========== SCRIPTS ========== -->
+<!-- supabaseClient JS SDK -->
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+<!-- Main Script -->
+<script src="script.js"></script>
+
+<!-- ========== SCRIPTS ========== -->
+<!-- Supabase JS SDK -->
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+<!-- Main Script -->
+<script src="script.js"></script>
+
+<!-- ========== SCRIPTS ========== -->
+<!-- Supabase JS SDK -->
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+<!-- Main Script -->
+<script src="script.js"></script>
+
+<!-- 🔥 EXPOSE FUNCTIONS KE GLOBAL -->
+<script>
+    // Tunggu sampai script.js selesai di-load
+    document.addEventListener('DOMContentLoaded', function() {
+        // Expose semua fungsi ke window
+        if (typeof openBooking !== 'undefined') {
+            window.openBooking = openBooking;
+            window.closeBooking = closeBooking;
+            window.closeIfOverlay = closeIfOverlay;
+            window.goToPayment = goToPayment;
+            window.switchPm = switchPm;
+            window.copyText = copyText;
+            window.previewProof = previewProof;
+            window.submitBooking = submitBooking;
+            window.sendToWA = sendToWA;
+            window.sendContactWA = sendContactWA;
+            window.toggleMenu = toggleMenu;
+            window.closeMenu = closeMenu;
+            window.goToStep = goToStep;
+            
+            console.log('✅ All functions exposed to global scope');
+        } else {
+            console.log('⏳ Waiting for script.js to load...');
+            // Retry after 500ms
+            setTimeout(function() {
+                if (typeof openBooking !== 'undefined') {
+                    window.openBooking = openBooking;
+                    window.closeBooking = closeBooking;
+                    window.closeIfOverlay = closeIfOverlay;
+                    window.goToPayment = goToPayment;
+                    window.switchPm = switchPm;
+                    window.copyText = copyText;
+                    window.previewProof = previewProof;
+                    window.submitBooking = submitBooking;
+                    window.sendToWA = sendToWA;
+                    window.sendContactWA = sendContactWA;
+                    window.toggleMenu = toggleMenu;
+                    window.closeMenu = closeMenu;
+                    window.goToStep = goToStep;
+                    console.log('✅ All functions exposed (delayed)');
+                }
+            }, 500);
+        }
+        
+        console.log('✅ Supabase initialized:', typeof window.supabaseClient !== 'undefined');
+    });
+</script>
+
+</body>
+</html>
